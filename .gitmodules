@@ -1,0 +1,6 @@
+[submodule "riscv-matrix-extension-spec"]
+	path = riscv-matrix-extension-spec
+	url = git@github.com:yelbuod/riscv-matrix-extension-spec
+[submodule "openc910"]
+	path = openc910
+	url = git@github.com:yelbuod/openc910.git
