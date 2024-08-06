@@ -1,9 +1,1 @@
-*.*
-*
-!*/
-!.gitignore
-!.gitmodules
-!README.md
-!/openc910/*
-!/riscv-matrix-extension-spec/*
-!/wenxuan-mat/*
+.vscode/
