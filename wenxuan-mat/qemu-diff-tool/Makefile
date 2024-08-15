@@ -16,9 +16,7 @@ GUEST_ISA = riscv64
 NAME  = $(GUEST_ISA)-qemu-so
 SRCS  = $(shell find src/ -name "*.c")
 
-CFLAGS += -DNEMU_HOME=\"$(NEMU_HOME)\" -DCONFIG_ISA_$(GUEST_ISA)
 INC_PATH += $(NEMU_HOME)/include
-
 
 # Target is a shared library
 CFLAGS  += -fPIC

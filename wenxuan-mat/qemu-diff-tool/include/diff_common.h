@@ -13,8 +13,8 @@
 * See the Mulan PSL v2 for more details.
 ***************************************************************************************/
 
-#ifndef __COMMON_H__
-#define __COMMON_H__
+#ifndef __D_COMMON_H__
+#define __D_COMMON_H__
 
 #include <stdint.h>
 #include <stdbool.h>

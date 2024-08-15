@@ -13,7 +13,7 @@
 * See the Mulan PSL v2 for more details.
 ***************************************************************************************/
 
-#include "common.h"
+#include "diff_common.h"
 
 static struct gdb_conn *conn;
 
@@ -91,8 +91,7 @@ bool gdb_getSupported() {
   gdb_send(conn, (const uint8_t *)buf, strlen(buf));
   size_t size;
   uint8_t *reply = gdb_recv(conn, &size);
-  // printf(": %ld\n", size);
-
+  printf("Packet received: %s\n", reply);
   free(reply);
 
   return true;
@@ -104,7 +103,7 @@ bool gdb_getMatrixSupported() {
   gdb_send(conn, (const uint8_t *)buf, strlen(buf));
   size_t size;
   uint8_t *reply = gdb_recv(conn, &size);
-  // printf("gdb recv %s\n", reply);
+  printf("Packet received: %s\n", reply);
   printf(": %ld\n", size);
 
   free(reply);
@@ -113,16 +112,11 @@ bool gdb_getMatrixSupported() {
 }
 
 bool gdb_getMregs() {
-  char buf[] = "p6c";//"p6c";
+  char buf[] = "p6c"; // ~ p73
   gdb_send(conn, (const uint8_t *)buf, strlen(buf));
   size_t size;
   uint8_t *reply = gdb_recv(conn, &size);
-  printf("gdb recv %s\n", reply);
-  // int i;
-  // for (i = 0; i < size; i ++) {
-  //   printf("%c", *(reply+i));
-  // }
-  printf(": %ld\n", size);
+  printf("Packet received: %s\n", reply);
 
   free(reply);
 

@@ -13,7 +13,7 @@
 * See the Mulan PSL v2 for more details.
 ***************************************************************************************/
 
-#include "common.h"
+#include "diff_common.h"
 #include <sys/prctl.h>
 #include <signal.h>
 

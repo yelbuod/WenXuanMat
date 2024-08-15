@@ -17,7 +17,7 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "common.h"
+#include "diff_common.h"
 #include <ctype.h>
 #include <err.h>
 
