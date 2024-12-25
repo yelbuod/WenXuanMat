@@ -3,7 +3,4 @@
 	url = git@github.com:yelbuod/riscv-matrix-extension-spec
 [submodule "openc910"]
 	path = openc910
-	url = git@github.com:yelbuod/openc910.git
-[submodule "openc910-matrixExt"]
-	path = openc910-matrixExt
-	url = https://github.com/yelbuod/openc910-matrixExt.git
+	url = git@github.com:yelbuod/openc910-matrixExt.git
